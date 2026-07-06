@@ -147,11 +147,15 @@ with c1:
     st.info("🏭 **Machine:** Surface Grinding Machine")
 
 with c2:
-   with c2:
 
-    if latest_current <= 0.2:
+    from datetime import datetime
+
+    # Time since last saved reading
+    time_diff = (datetime.now() - latest_time).total_seconds()
+
+    # If no new data for >10 sec, machine is idle
+    if time_diff > 10:
         st.info("🔵 Machine State : IDLE")
-
     else:
         st.success("🟢 Machine State : RUNNING")
 
