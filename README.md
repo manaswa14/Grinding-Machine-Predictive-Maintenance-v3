@@ -251,6 +251,43 @@ Workflow:
 
 ---
 
+# 🧠 Machine Learning Pipeline
+
+```
+Live Machine Data
+        │
+        ▼
+Data Cleaning
+        │
+        ▼
+Feature Selection
+        │
+        ▼
+Standard Scaling
+        │
+        ▼
+Isolation Forest Model
+        │
+        ▼
+Anomaly Detection
+        │
+        ▼
+Health Prediction
+        │
+        ▼
+Recommendation
+```
+
+### Model Used
+
+- Isolation Forest
+- StandardScaler
+- Unsupervised Learning
+- Real-time Prediction
+
+
+---
+
 # 📈 Project Results
 
 ✅ Successfully established RS485 Modbus RTU communication between the SELEC MFM384 Energy Meter and ESP32.
